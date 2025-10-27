@@ -1,3 +1,67 @@
-<script>
-  location.href="https://link-pory-f.onrender.com/"
-</script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferretería El Tornillo de Oro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Ferretería El Tornillo de Oro</h1>
+      <p>Todo lo que necesitas para construir, reparar o mejorar tu hogar.</p>
+      <a href="#contacto" class="btn">Solicitar Cotización</a>
+    </div>
+  </header>
+
+  <section class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/03/27/20/54/tools-1284724_1280.jpg" alt="Herramientas" />
+        <h3>Herramientas</h3>
+        <p>Desde destornilladores hasta taladros profesionales.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2015/12/09/17/12/construction-1080580_1280.jpg" alt="Materiales" />
+        <h3>Materiales de Construcción</h3>
+        <p>Cemento, pintura, tuberías y todo lo necesario para tu obra.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/02/18/22/16/screws-1207006_1280.jpg" alt="Ferretería general" />
+        <h3>Ferretería General</h3>
+        <p>Tornillos, clavos, bisagras, cerraduras y más.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>🧰 Asesoría personalizada para cada proyecto</li>
+      <li>🚚 Entregas rápidas y seguras</li>
+      <li>💸 Precios competitivos</li>
+      <li>🏠 Más de 20 años de experiencia</li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Solicita tu Cotización</h2>
+    <form id="form">
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+      <input type="tel" id="telefono" placeholder="Teléfono" required maxlength="10" />
+      <textarea id="mensaje" placeholder="¿Qué necesitas?" required></textarea>
+      <button type="submit" class="btn">Enviar Solicitud</button>
+    </form>
+    <p id="resultado"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ferretería El Tornillo de Oro | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
